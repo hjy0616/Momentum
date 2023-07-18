@@ -1,0 +1,168 @@
+/* XEION CDN */
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+.hidden {
+  display: none;
+}
+/*############# Defalut CSS ############# */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+body {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.contatiner {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#clock {
+  color: #fff;
+  font-size: 70px;
+}
+
+/*############# Background Image ############# */
+.bgImageAfter {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+}
+.bgImageAfter img {
+  display: block;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.bgImageAfter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.351);
+  width: 100%;
+  height: 100%;
+}
+/*############# Common CSS ############# */
+#login-form input[type="text"],
+#todo-form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+#login-form input[type="text"]:focus::placeholder,
+#todo-form input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+#login-form input[type="text"]::placeholder,
+#todo-form input[type="text"]::placeholder {
+  color: #ddd;
+}
+/*############# Login Greeting ############# */
+#login-form input[type="text"],
+#greeting {
+  font-size: 70px;
+  margin: 10px 0 30px 0;
+  color: #fff;
+}
+#login-form.hidden {
+  visibility: visible;
+  opacity: 1;
+}
+#login-form input[type="text"] {
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+#login-form button {
+  display: none;
+}
+/*############# To Do List ############# */
+#todo-form input[type="text"] {
+  font-size: 20px;
+  border-bottom: 2px solid #ddd;
+}
+.todolist {
+  position: absolute;
+  top: 350px;
+  left: 30%;
+  overflow: hidden;
+}
+.xi-calendar-list {
+  font-family: xeicon;
+  color: #fff;
+  font-size: 35px;
+  transform: translateY(7px);
+  padding-right: 10px;
+}
+#todo-form {
+  float: left;
+  margin-top: 50px;
+}
+#todo-list {
+  margin-left: 40px;
+  margin-top: 0;
+  float: right;
+  color: #fff;
+  padding: 0;
+  text-align: left;
+}
+#todo-list li {
+  margin: 10px 0;
+  font-size: 20px;
+}
+#todo-list li span {
+  padding: 2px;
+  transition: 0.3s;
+}
+#todo-list li:hover span {
+  border-radius: 3px;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border: 1px solid red; */
+}
+#todo-list li button {
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+/*############# Quote ############# */
+#quote {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 16px;
+  /* position: relative; */
+}
+#quote span:last-child {
+  display: block;
+  margin-top: 15px;
+}
+
+/*############# Weather ############# */
+#weather {
+  position: relative;
+  font-size: 15px;
+  color: #fff;
+  float: right;
+  margin: 20px;
+  margin-right: 50px;
+}

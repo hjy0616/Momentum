@@ -1,0 +1,61 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*####### Login Greeting ####### */
+  #login-form input[type="text"],
+  #greeting {
+    font-size: 50px;
+  }
+  /*####### To Do List ####### */
+  .todolist {
+    left: 20%;
+  }
+}
+@media (max-width: 767px) {
+  #clock {
+    font-size: 40px;
+  }
+  /*####### Login Greeting ####### */
+  #login-form input[type="text"],
+  #greeting {
+    font-size: 20px;
+  }
+  .xi-calendar-list {
+    font-size: 25px;
+    padding-right: 5px;
+    transform: translateY(6px);
+  }
+  .todolist {
+    top: 200px;
+    left: 20%;
+    overflow: visible;
+  }
+  #todo-list,
+  #todo-form {
+    float: none;
+  }
+  #todo-list {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+  }
+  #todo-form input[type="text"],
+  #todo-list li {
+    font-size: 15px;
+  }
+  #todo-list li button {
+    font-size: 12px;
+  }
+  #todo-list li {
+    margin: 5px 0;
+  }
+  /*####### Quote ####### */
+  #quote {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+  /*####### Weather ####### */
+  #weather {
+    font-size: 12px;
+    margin: 10px;
+  }
+}
